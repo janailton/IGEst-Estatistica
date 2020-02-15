@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef IGEstLoggerH
+#define IGEstLoggerH
+//---------------------------------------------------------------------------
+
+class IGEstLogger {
+	public:
+		static void LOG(const char* logmsg);
+		static void LOG(const AnsiString &Astring);
+};
+
+#endif

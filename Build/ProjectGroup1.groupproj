@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{8E5BB7B4-ED95-450F-ADC4-CB1C3FF4ABC7}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="IGEst.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="C:\Users\Janailton\Documents\RAD Studio\Projects\c++-excel\Project1.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="IGEst">
+			<MSBuild Projects="IGEst.cbproj"/>
+		</Target>
+		<Target Name="IGEst:Clean">
+			<MSBuild Targets="Clean" Projects="IGEst.cbproj"/>
+		</Target>
+		<Target Name="IGEst:Make">
+			<MSBuild Targets="Make" Projects="IGEst.cbproj"/>
+		</Target>
+		<Target Name="Project1">
+			<MSBuild Projects="C:\Users\Janailton\Documents\RAD Studio\Projects\c++-excel\Project1.cbproj"/>
+		</Target>
+		<Target Name="Project1:Clean">
+			<MSBuild Targets="Clean" Projects="C:\Users\Janailton\Documents\RAD Studio\Projects\c++-excel\Project1.cbproj"/>
+		</Target>
+		<Target Name="Project1:Make">
+			<MSBuild Targets="Make" Projects="C:\Users\Janailton\Documents\RAD Studio\Projects\c++-excel\Project1.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="IGEst;Project1"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="IGEst:Clean;Project1:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="IGEst:Make;Project1:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

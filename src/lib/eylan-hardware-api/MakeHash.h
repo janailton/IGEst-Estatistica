@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef MakeHashH
+#define MakeHashH
+
+
+#include "eylan-hardware-api.h"
+#include "HardwareUtils.h"
+
+
+struct _hash {
+	int size;
+	char *data;
+};
+
+API_EXTERN_C EYLAN_LIB_API const API_CALL _hash get_hash();
+API_EXTERN_C EYLAN_LIB_API const char* API_CALL get_str_hash();
+API_EXTERN_C EYLAN_LIB_API const char*API_CALL get_str_hashA();
+
+API_EXTERN_C EYLAN_LIB_API __int64 API_CALL eylan_get_cpu_id();
+
+//---------------------------------------------------------------------------
+#endif

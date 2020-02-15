@@ -1,0 +1,100 @@
+//    Copyright (C) 2010, 2009 José Janaílton da Silva
+//		<josejanailton@gmail.com>
+//
+//    This program is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program; if not, write to the Free Software
+//    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+#include "update.h"
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include <windows.h>
+#include <shellapi.h>
+
+#include <tinyxml/tinyxml.h>
+#pragma comment ( lib , "libtinyxml.lib" )
+
+#include <stdexcept>
+using namespace std;
+
+#include "socks_connection.h"
+
+#include "../Versão/UnitVersao.h"
+
+
+
+int update()
+{
+
+	try
+	{
+
+		string iver;
+		for(int i=0; i<VERSAO.length(); i++)
+			if( VERSAO[i] != '.' )
+				iver += VERSAO[i];
+
+		//ShowMessage( AnsiString("Tentando atualizar para a versao posterior da ") + AnsiString (iver.c_str()) );
+
+		socks_connection connection( UPDATE_SERVER.c_str() , UPDATE_INFO.c_str() , 80 );
+		//socks_connection connection( "127.0.0.1" , "/info.xml" , 80 );
+		string info = connection.Get();
+
+		int start_position = info.find( "<?xml" );
+		int end_position = info.find( "/>" ) + 2;
+
+		string xml = info.substr( start_position , end_position - start_position );
+
+		//MessageBox( 0, xml.c_str(), 0, MB_OK);
+
+		TiXmlDocument doc;
+		doc.Parse( xml.c_str() );
+
+		TiXmlElement * igest = doc.FirstChildElement();
+		string check = igest->Value();
+
+		if( check == "IGEst" )
+		{
+			string version = igest->Attribute("ver");
+			string url = igest->Attribute("url");
+
+			int vnew = StrToInt(version.c_str());
+			int vold = StrToInt(iver.c_str());
+
+			if(vnew > vold )
+			{
+
+				int resp = MessageBox( 0,
+					"Uma atualização para o programa IGEst foi encontrada. "
+					"É recomendável utilizar a versão mais atualizada, pois ela possui correções e melhoramentos essenciais."
+					"Deseja atualizar agora?", "Atualização do IGEst", MB_YESNO);
+
+				if( resp == IDYES) ShellExecute( NULL , "open", url.c_str(), NULL, NULL, SW_SHOWNORMAL);
+			}
+		}
+
+		return 0;
+		
+	}
+	catch( logic_error *e)
+	{
+
+	}
+	catch( ... )
+	{
+
+	}
+}
+

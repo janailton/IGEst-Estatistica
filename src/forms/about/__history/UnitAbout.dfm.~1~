@@ -1,0 +1,67 @@
+object FormAbout: TFormAbout
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Sobre...'
+  ClientHeight = 398
+  ClientWidth = 460
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 444
+    Height = 382
+    TabOrder = 0
+    object LabelAppName: TLabel
+      Left = 32
+      Top = 24
+      Width = 44
+      Height = 13
+      Caption = 'Eylan (R)'
+    end
+    object LabelAutor: TLabel
+      Left = 32
+      Top = 43
+      Width = 142
+      Height = 13
+      Caption = 'Autor: Jos'#233' Janailton da Silva'
+    end
+    object LabelLicense: TLabel
+      Left = 32
+      Top = 120
+      Width = 3
+      Height = 13
+    end
+    object LabelEmail: TLabel
+      Left = 32
+      Top = 62
+      Width = 153
+      Height = 13
+      Caption = 'E-mail: josejanailton@gmail.com'
+    end
+    object LabelSite: TLabel
+      Left = 32
+      Top = 81
+      Width = 25
+      Height = 13
+      Caption = 'Site: '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      OnClick = LabelSiteClick
+    end
+  end
+end

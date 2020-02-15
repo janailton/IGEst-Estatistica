@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef HardwareUtilsH
+#define HardwareUtilsH
+//---------------------------------------------------------------------------
+
+#ifdef MAKEDLL
+#  define EYLAN_LIB_API __declspec(dllexport)
+#  define API_EXTERN_C extern "C"
+#else
+#  define EYLAN_LIB_API __declspec(dllimport)
+#  define API_EXTERN_C
+#endif
+
+#ifndef API_CALL
+	#define API_CALL __stdcall
+#endif
+
+const char dll_guid[] ="{CBD67ED8-4CF7-4EE5-8DAC-3C4D419D6E31}\0";
+
+API_EXTERN_C EYLAN_LIB_API const char* API_CALL eylan_hardware_guid();
+
+
+
+
+
+#endif

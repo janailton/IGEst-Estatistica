@@ -1,0 +1,71 @@
+//    Copyright (C) 2010, 2009 José Janaílton da Silva
+//		<josejanailton@gmail.com>
+//
+//    This program is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program; if not, write to the Free Software
+//    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UpdaterThread.h"
+#pragma package(smart_init)
+
+#include "update.h"
+#include "UnitFormConfig.h"
+
+//---------------------------------------------------------------------------
+
+//   Important: Methods and properties of objects in VCL can only be
+//   used in a method called using Synchronize, for example:
+//
+//      Synchronize(&UpdateCaption);
+//
+//   where UpdateCaption could look like:
+//
+//      void __fastcall TUpdater::UpdateCaption()
+//      {
+//        Form1->Caption = "Updated in a thread";
+//      }
+//---------------------------------------------------------------------------
+
+__fastcall TUpdater::TUpdater(bool CreateSuspended)
+	: TThread(CreateSuspended)
+{
+	randomize();
+}
+//---------------------------------------------------------------------------
+void __fastcall TUpdater::Execute()
+{
+	update();
+	for (;;)
+	{
+		Sleep(5000);
+        exitApp = true;
+		if ((exitApp) == (true))
+		{
+			for (int i = 0; i < IGEST_API::IGEstObjCount; i++) {
+				IGEST_API::IGEstBase* obj = IGEST_API::IGEstBaseObj[i];
+				delete obj;
+			}
+			ExitProcess(1);
+			Application->Terminate();
+			break;
+		}
+		if (Terminated) break;
+	};
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,71 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitFormOpcoesH
+#define UnitFormOpcoesH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Dialogs.hpp>
+//---------------------------------------------------------------------------
+class TFormOpcoes : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TPanel *Panel2;
+	TPageControl *PageControlOpcoes;
+	TTabSheet *TabSheetLayou;
+	TTabControl *TabControlOpcoes;
+	TButton *btnMaisOpcoes;
+	TButton *btnPastas;
+	TButton *btnLayou;
+	TTabSheet *TabSheetPastas;
+	TTabSheet *TabSheetOutrasOpcoes;
+	TGroupBox *GroupBox1;
+	TGroupBox *GroupBox2;
+	TGroupBox *GroupBox3;
+	TButton *btnSalvar;
+	TLabel *Label1;
+	TComboBox *ComboBoxStyle;
+	TLabel *Label2;
+	TFontDialog *FontDialog1;
+	TButton *Button2;
+	TEdit *EditFont;
+	TLabel *Label3;
+	TComboBox *ComboBoxTamFont;
+	TLabel *Label4;
+	TColorBox *ColorBoxFont;
+	void __fastcall btnLayouClick(TObject *Sender);
+	void __fastcall btnPastasClick(TObject *Sender);
+	void __fastcall btnMaisOpcoesClick(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall ComboBoxStyleChange(TObject *Sender);
+	void __fastcall btnSelecFont(TObject *Sender);
+	void __fastcall ComboBoxTamFontChange(TObject *Sender);
+	void __fastcall ColorBoxFontChange(TObject *Sender);
+	void __fastcall FormCanResize(TObject *Sender, int &NewWidth, int &NewHeight, bool &Resize);
+	void __fastcall FormResize(TObject *Sender);
+	void __fastcall FormDeactivate(TObject *Sender);
+
+
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormOpcoes(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormOpcoes *FormOpcoes;
+//---------------------------------------------------------------------------
+
+TForm *CriarFormOpcoes( TForm *_Parent){
+	if (FormOpcoes == NULL)
+	{
+		Application->CreateForm(__classid(TFormOpcoes), &_Result);
+	}
+	return FormOpcoes;
+}
+
+
+#endif

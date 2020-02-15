@@ -1,0 +1,38 @@
+object FormWiki: TFormWiki
+  Left = 0
+  Top = 0
+  Caption = 'Material Para Estudo '
+  ClientHeight = 616
+  ClientWidth = 669
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TabControl1: TTabControl
+    Left = 0
+    Top = 0
+    Width = 669
+    Height = 616
+    Align = alClient
+    MultiLine = True
+    ScrollOpposite = True
+    TabOrder = 0
+    ExplicitWidth = 289
+  end
+  object Button2: TButton
+    Left = 586
+    Top = 8
+    Width = 75
+    Height = 25
+    Align = alCustom
+    Caption = 'Button2'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+end

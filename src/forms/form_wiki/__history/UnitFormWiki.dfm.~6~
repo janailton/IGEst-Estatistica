@@ -1,0 +1,48 @@
+object FormWiki: TFormWiki
+  Left = 0
+  Top = 0
+  Caption = 'Material Para Estudo '
+  ClientHeight = 616
+  ClientWidth = 669
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TabControl1: TTabControl
+    Left = 0
+    Top = 90
+    Width = 669
+    Height = 526
+    Align = alClient
+    MultiLine = True
+    ScrollOpposite = True
+    TabOrder = 0
+    ExplicitTop = 0
+    ExplicitWidth = 289
+    ExplicitHeight = 616
+  end
+  object HeaderControl1: THeaderControl
+    Left = 0
+    Top = 0
+    Width = 669
+    Height = 49
+    Sections = <>
+  end
+  object btnAtualizar: TButton
+    Left = 0
+    Top = 49
+    Width = 669
+    Height = 41
+    Align = alTop
+    Caption = 'Atualizar'
+    Style = bsCommandLink
+    TabOrder = 2
+    OnClick = btnAtualizarClick
+  end
+end

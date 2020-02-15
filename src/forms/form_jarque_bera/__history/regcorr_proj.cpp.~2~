@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <tchar.h>
+
+#include "form_jarquebera.h"
+
+
+WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
+{
+	ShowFormRegressaCorrelacao();
+	return 0;
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009/12/03 13:41:33.515.cbproj,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\IGEst_2.1_(CBuilder2009)\IGEst.cbproj=C:\Documents and Settings\Administrador\Meus documentos\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2009/12/03 14:13:13.921.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilderMainForm\Main.cpp=</Transaction>
+    <Transaction>2009/12/03 14:13:13.937.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilderMainForm\Main.dfm=</Transaction>
+    <Transaction>2009/12/03 14:20:38.187.res,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\IGEst_2.1_(CBuilder2009)\IGEst.res=</Transaction>
+    <Transaction>2009/12/03 14:21:07.265.res,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilderMainForm\IGEst.res=</Transaction>
+    <Transaction>2009/12/03 14:22:46.890.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\DistribNormal.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.890.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\Binomial.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.890.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\EstatisticaDescritiva.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.906.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_EstatDescritiva\FormHistograma.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.906.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\Hipergeometrica.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.906.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_EstatDescritiva\FormHistograma.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:46.906.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\FuncoesBasicas.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.937.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilderMainForm\Main.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.937.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilderMainForm\Main.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:46.953.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\Poisson.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.968.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\libeylan\Slot.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_FormAbout\UnitAbout.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Binomial\unitBinomial.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Binomial\unitBinomial.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Hipergeometrica\unitHipergeometrica.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Hipergeometrica\unitHipergeometrica.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:46.984.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_FormAbout\UnitAbout.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Poisson\unitPoisson.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Poisson\unitPoisson.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal\unitNormal.cpp=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal\unitNormal.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal_Padrão\unitNormal_Padrao.dfm=</Transaction>
+    <Transaction>2009/12/03 14:22:47.000.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal_Padrão\unitNormal_Padrao.cpp=</Transaction>
+    <Transaction>2009/12/06 16:28:38.765.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal\unitNormal.dfm=</Transaction>
+    <Transaction>2009/12/06 16:28:38.765.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_Normal\unitNormal.cpp=</Transaction>
+    <Transaction>2009/12/07 10:49:51.656.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\Versão\UnitVersao.cpp=C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\IGEst_2.1_(CBuilder2009)\Unit1.cpp</Transaction>
+    <Transaction>2009/12/07 10:49:51.656.h,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\Versão\UnitVersao.h=C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\IGEst_2.1_(CBuilder2009)\Unit1.h</Transaction>
+    <Transaction>2009/12/07 11:07:40.875.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_FormAbout\UnitAbout.cpp=</Transaction>
+    <Transaction>2009/12/07 11:07:40.875.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst\CBuilder_FormAbout\UnitAbout.dfm=</Transaction>
+    <Transaction>2010/01/17 17:30:32.859.res,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.3-under-develpment\Build\IGEst.res=</Transaction>
+    <Transaction>2010/01/17 18:43:30.250.lib,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.3-under-develpment\src\lib\alglib\alglib_cbuilder.lib=</Transaction>
+    <Transaction>2010/02/11 13:43:36.375.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.4-under-develpment\src\DLL\tStudentDll.cpp=</Transaction>
+    <Transaction>2010/02/11 13:43:38.640.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.4-under-develpment\src\DLL\QuiQuadradoDll.cpp=</Transaction>
+    <Transaction>2010/04/30 12:11:18.359.ico,C:\Documents and Settings\Administrador\Meus documentos\Icons\IGEst_1b.ico=</Transaction>
+    <Transaction>2010/04/30 12:11:19.140.ico,C:\Documents and Settings\Administrador\Meus documentos\Icons\IGEst_1.ico=</Transaction>
+    <Transaction>2010/06/19 08:48:50.625.cpp,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.6-under-delopment\src\forms\mediaDPDesc\unitMediaDPCesc.cpp=</Transaction>
+    <Transaction>2010/06/19 08:48:50.640.dfm,C:\Documents and Settings\Administrador\Meus documentos\CBuilder\IGEst-2.2.6-under-delopment\src\forms\mediaDPDesc\unitMediaDPCesc.dfm=</Transaction>
+    <Transaction>2012/07/27 07:27:01.366.cpp,G:\Programação\IGEST\IGEst-Profissional-3.0.2-src\src\forms\form_md5\ProjectMD5.cpp=</Transaction>
+    <Transaction>2019/05/28 13:58:46.000.240,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\forms\ftp\md5.c=</Transaction>
+    <Transaction>2019/05/28 13:58:55.000.920,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\forms\ftp\ftpnotifywindow.cpp=</Transaction>
+    <Transaction>2019/05/28 13:59:06.000.498,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\forms\ftp\MD5Class.cpp=</Transaction>
+    <Transaction>2019/05/28 13:59:38.000.105,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\forms\form_md5\UnitMD5.cpp=</Transaction>
+    <Transaction>2019/05/28 14:00:19.000.029,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\forms\ftp\UnitFTP.cpp=</Transaction>
+    <Transaction>2019/05/28 14:00:19.000.008,E:\jan\Old_win\igest 3.0.5\IGEst-Profissional-3.0.3-src\IGEst-Profissional-3.0.3-src\src\update\socks_connection.cpp=</Transaction>
+    <Transaction>2019/06/13 22:12:57.000.279,=E:\Programação\igest 4.0.0\IGEst-Profissional-3.8.0-src\IGEst-Profissional-3.8.0-src\IGEst-Profissional-3.0.3-src\src\forms\config\UnitFormConfig.cpp</Transaction>
+    <Transaction>2019/12/18 12:21:47.000.126,=E:\Programação\igest 4.0.0\IGEst-Profissional-3.8.3-src\IGEst-Profissional-3.8.3-src\src\forms\form_jarque_bera\form_jarquebera.cpp</Transaction>
+    <Transaction>2019/12/30 16:54:06.000.628,=E:\Programação\igest 4.0.0\IGEst-Profissional-3.9.3-src\IGEst-Profissional-3.9.3-src\src\forms\form_opcoes\UnitFormOpcoes.cpp</Transaction>
+    <Transaction>2020/01/08 11:28:43.000.486,=E:\Programação\igest 4.0.0\IGEst-Profissional-3.9.4-src\IGEst-Profissional-3.9.4-src\src\forms\form_wiki\UnitFormWiki.cpp</Transaction>
+    <Transaction>2020/01/08 13:30:20.000.159,=E:\Programação\igest 4.0.0\IGEst-Profissional-3.9.5-src\IGEst-Profissional-3.9.5-src\src\lib\eylan-hardware-api\eylan-hardware-api.lib</Transaction>
+    <Transaction>2020/01/08 13:53:34.000.245,E:\Programação\igest 4.0.0\IGEst-Profissional-3.9.5-src\IGEst-Profissional-3.9.5-src\src\lib\eylan-hardware-api\eylan-hardware-api.lib=</Transaction>
+    <Transaction>2020/01/21 13:18:58.000.561,=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\src\PluginManager\PluginManager\IGEstPluginManager.cpp</Transaction>
+    <Transaction>2020/01/21 13:24:50.000.970,=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\src\Logger\IGEstLogger.cpp</Transaction>
+    <Transaction>2020/01/23 12:29:14.000.033,=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\src\PluginManager\IGEstPluginManager.cpp</Transaction>
+    <Transaction>2020/01/26 16:21:12.000.284,=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\Build\Unit1.cpp</Transaction>
+    <Transaction>2020/01/26 16:22:01.000.694,E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\src\api\IGEST_API.h=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\Build\Unit1.h</Transaction>
+    <Transaction>2020/01/26 16:22:01.000.694,E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\src\api\IGEST_API.cpp=E:\igest\IGEst-Profissional-3.10.1-src\IGEst-Profissional-3.10.1-src\Build\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
